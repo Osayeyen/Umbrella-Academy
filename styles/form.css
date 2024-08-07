@@ -1,0 +1,122 @@
+.forms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > .form-group {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.signup, .login {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  color: #333;
+  width: 50vw;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0%, 0%, 0.3);
+}
+
+.signup-form, .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form input {
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 2.5px solid #808080;
+  width: 450px;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #cea135;
+}
+
+.form input::-webkit-input-placeholder {
+  color: #11122b;
+}
+
+.form input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  color: #cea135;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form input:focus + label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(1rem);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #11122b;
+  border: 3px solid #cea135;
+  color: #f0f0f0;
+  font-size: 20px;
+}
+
+
+button:hover {
+  background-color: #999;
+  color: #11122b;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  margin: 5px 0;
+  width: 70px;
+  transition: 0.5s ease;
+}
+
+a:hover {
+  color: #cea135;
+  letter-spacing: 0.1rem;
+}
